@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivedan Liye - Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel='icon' href='https://autopost.s3.nl-ams.scw.cloud/favicon.cloud/1f300438c2cb89e75808b5bd7a4cd8c9.png' sizes='32x32' />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        html{
+            scroll-behavior:smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            background-image: url(https://i.postimg.cc/FKSybL13/Nivport-HD.png);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+            background-color: black;
+            
+        }
+        .content{
+            position: absolute;
+            height: 80%;
+            min-width: 70%;
+            display: flex;
+            flex-direction: column;
+            top: 30%;
+            left:7%;
+            color: white;
+            font-family: open sans;
+            text-align: left;
+            margin-bottom: 16px;
+            z-index: -1;
+        }
+        @keyframes lineup {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+        .navbar{
+            position:fixed;
+            height: 9%;
+            width: 100%;
+            padding-left: 6%;
+            padding-right: 6%;
+            display: flex;
+            flex-direction: row;
+            justify-content:left;
+            align-items: center;
+            font-family: open sans;
+            background-color: rgba(0, 0, 0, 0.654);
+        }
+        .home,.about,.work,.projects{
+            font-size: 0.96rem;
+            color: white;
+            text-decoration: none;
+            margin:0 1rem;
+        }
+        .contact{
+            font-size: 0.96rem;
+            color: white;
+            text-decoration: none;
+            position:sticky;
+            left: 100%;
+            
+        }
+        .home{
+            color: orange;
+        }
+        header{
+            font-size: 1.6rem;
+            animation: 2s lineup ease-out;
+
+        }
+        .mainheading{
+                width: 38vw;
+                font-size: 3.7rem;
+                font-family: sans-serif;
+                transition: all 2s ease;
+                animation: 1.5s lineup ease-out;
+
+        }
+        .mainT{
+                font-size: 1.2rem;
+                font-family: open Sans;
+                padding:10px 0;
+                max-width: 66%;
+                animation: 2s lineup ease-out;
+                color: rgb(189, 189, 189);
+                line-height:2rem;
+        }
+        details{
+            width: 40%;
+            height: 30%;
+
+        }
+        .link,summary{
+            color: orange;
+            animation: 2s lineup ease-out;
+
+        }
+        .nav-content{
+            display: none;
+        }
+        .icon{
+            display: none;
+        }
+        @media (max-width:768px){
+            body{
+                background-size:cover;
+                background-position:200% 10%;
+            }
+            .navbar{
+                display: none;
+            }
+            .icon{
+                height: 3.5rem;
+                width: 3.5rem;
+                display: block;
+                float: left;
+                position: absolute;
+                margin: 2%;
+                background-color: rgba(32, 32, 32, 0.76);
+                padding: 1.2rem 1rem;
+                border-radius: 20%;
+            }
+            .nav-content{
+                font-family: open sans;
+                padding-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+                background-color: black;
+                overflow: hidden;
+                font-size: 2rem;
+                height: 100vh;
+                width: 0;
+                position:fixed;
+                transition: all 0.5s;
+            }
+            .alink,li{
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                padding: 1.5rem;
+            }
+            ul.open{
+                width: 100%;
+                padding-top: 2rem;  
+            }
+            .none{
+                display: none;
+            }
+        }
+        @media (max-width:1000px){
+            body{
+                background-size:cover;
+                background-position:70% 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="./Home.html" class="home">Home</a>
+        <a href="./about.html" class="about">About</a>
+        <a href="./work.html" class="work">Work</a>
+        <a href="./projects.html" class="projects">Projects</a>
+        <a href="./contact.html" class="contact">Contact</a>
+    </div>
+    
+       <img class="icon" src="https://www.pikpng.com/pngl/b/425-4251166_menu-bar-icon-white-clipart.png" alt="menu">
+        <ul class="nav-content">
+                <li><a href="./Home.html" class="alink">Home</a></li>
+                <li><a href="/about.html" class="alink">About</a></li>
+                <li><a href="/work.html" class="alink">Work</a></li>
+                <li><a href="./projects.html" class="alink">Project</a></li>
+                <li><a href="./contact.html" class="alink">Contact us</a></li>
+                <li><a class="remove-nav alink" href="">✖</a></li>
+            </ul>
+
+    <section class="content">
+        <header>Hi,I'm Niv.</header>
+        <br>
+        <h1 class="mainheading">
+            Developer. 
+            Designer
+            Person.
+        </h1>
+        <p class="mainT">Multidiciplinory designer who makes beautiful web pages.</p>
+        <p class="mainT">Full-stack Developer with graphic design skills.</p>
+        <p class="mainT">Less moody in real life.✌️</p>
+        <br>
+        <a href="./about.html" class="link"> Learn More</a>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
