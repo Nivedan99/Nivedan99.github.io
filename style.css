@@ -91,6 +91,7 @@ body {
     font-family: open sans;
 }
 header{
+    font-family: open sans;
     animation: 2s lineup ease-out;
 }
 .big-nav,.icon ,.nav-content{
