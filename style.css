@@ -90,6 +90,9 @@ body {
     line-height: 2rem;
     font-family: open sans;
 }
+header{
+    animation: 2s lineup ease-out;
+}
 .big-nav,.icon ,.nav-content{
     display: none;
 }
