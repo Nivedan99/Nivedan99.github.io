@@ -8,3 +8,4 @@ addnav.addEventListener('click',function(){
 removenav.addEventListener('click',function(){
     nav.classList.remove("open-nav");
 })
+

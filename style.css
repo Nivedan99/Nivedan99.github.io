@@ -13,7 +13,7 @@ body {
 .web {
     width: 100%;
     min-height: 120vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(200, 200, 200, 0.01)), url(https://i.postimg.cc/RVzhSQLM/Adobe-Ex.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(200, 200, 200, 0.01)), url(./images/Adobe_Ex.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
